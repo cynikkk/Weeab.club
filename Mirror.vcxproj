@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8D83C36A-DC6F-4260-A46B-3691C9F1F7A0}</ProjectGuid>
+    <RootNamespace>TransHack-Mirror</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Weeab</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>AutismH00k RECODE</TargetName>
+    <OutDir>.\Release</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapExports>false</MapExports>
+      <AssemblyDebug>false</AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Hacks\Features\AntiAim\AntiAntiAim.h" />
+    <ClInclude Include="Main\AntiLeak\AntiLeak.h" />
+    <ClInclude Include="Hacks\Misc\AutoDefuse\autodefuse.h" />
+    <ClInclude Include="Hacks\Features\AutoWall\Autowall.h" />
+    <ClInclude Include="Main\SDK\SDK\awh.h" />
+    <ClInclude Include="Main\BaseClient\BaseClient.h" />
+    <ClInclude Include="Main\SDK\SDK\bspflags.h" />
+    <ClInclude Include="Main\SDK\SDK\CBulletListener.h" />
+    <ClInclude Include="Main\SDK\SDK\CClientState.h" />
+    <ClInclude Include="Hacks\Features\Visuals\Chams\Chams.h" />
+    <ClInclude Include="%40Changelog.h" />
+    <ClInclude Include="Hacks\Misc\BunnyHop\CircleStrafer\circlestrafer.h" />
+    <ClInclude Include="Main\SDK\SDK\ClientRecvProps.h" />
+    <ClInclude Include="Includes\CommonIncludes.h" />
+    <ClInclude Include="Main\SDK\SDK\Controls.h" />
+    <ClInclude Include="Includes\CRC32\CRC32.h" />
+    <ClInclude Include="Main\SDK\SDK\CUtlVector.h" />
+    <ClInclude Include="Hacks\Misc\DamageIndicator\DamageIndicator.h" />
+    <ClInclude Include="Main\DLLMain.h" />
+    <ClInclude Include="Main\SDK\SDK\Dumping.h" />
+    <ClInclude Include="Main\SDK\SDK\edge.h" />
+    <ClInclude Include="Engine\EngineClient.h" />
+    <ClInclude Include="Engine\Engine Prediction\EnginePrediction.h" />
+    <ClInclude Include="Main\Entities\Entities.h" />
+    <ClInclude Include="Hacks\Features\Visuals\ESP\ESP.h" />
+    <ClInclude Include="Engine\Engine Prediction\engine_prd.h" />
+    <ClInclude Include="Main\SDK\SDK\FakeLatency.h" />
+    <ClInclude Include="Main\SDK\SDK\global_count.h" />
+    <ClInclude Include="Hacks\Features\Visuals\Glow\GlowManager.h" />
+    <ClInclude Include="Hacks\Features\Visuals\Glow\glow_outline_effect.h" />
+    <ClInclude Include="Menu\GUI\GUI.h" />
+    <ClInclude Include="Hacks\Hacks.h" />
+    <ClInclude Include="Main\SDK\SDK\globalshhh.h" />
+    <ClInclude Include="Hacks\Misc\GrenadePrediction\kobe.h" />
+    <ClInclude Include="Hacks\Misc\Radar\radar.h" />
+    <ClInclude Include="Main\SDK\SDK\IClientMode.h" />
+    <ClInclude Include="Hacks\Features\KnifeBot\knifebot.h" />
+    <ClInclude Include="Hacks\Features\LagCompensation\laggycompensation.h" />
+    <ClInclude Include="Main\SDK\SDK\lin_extp.h" />
+    <ClInclude Include="Main\SDK\SDK\lodepng.h" />
+    <ClInclude Include="Main\SDK\SDK\resource.h" />
+    <ClInclude Include="Main\SDK\SDK.h" />
+    <ClInclude Include="Main\SDK\SDK\singleton.h" />
+    <ClInclude Include="Main\SDK\SDK\Singleton.hpp" />
+    <ClInclude Include="Main\Xor\xor.h" />
+    <ClInclude Include="Hacks\Misc\HitMarker\hitmarker.h" />
+    <ClInclude Include="Hacks\Features\LagCompensation\LagCompensation2.h" />
+    <ClInclude Include="Main\SDK\SDK\pasted.h" />
+    <ClInclude Include="Main\SDK\SDK\Proxies.h" />
+    <ClInclude Include="Hacks\Features\Aim\Rage\Raged\raged.h" />
+    <ClInclude Include="Hacks\Features\Resolver\Resolver.h" />
+    <ClInclude Include="Main\SDK\SDK\Skins.h" />
+    <ClInclude Include="Main\SDK\SDK\winwindef.h" />
+    <ClInclude Include="Main\Hooks\Hooks.h" />
+    <ClInclude Include="Main\Injection\ReflectiveDLLInjection.h" />
+    <ClInclude Include="Main\Injection\ReflectiveLoader.h" />
+    <ClInclude Include="Menu\Interface\Interfaces.h" />
+    <ClInclude Include="Hacks\Features\Aim\Legit\LegitBot.h" />
+    <ClInclude Include="Main\SDK\SDK\Materials.h" />
+    <ClInclude Include="Main\MathFunctions\MathFunctions.h" />
+    <ClInclude Include="Menu\Menu.h" />
+    <ClInclude Include="Main\SDK\SDK\MetaInfo.h" />
+    <ClInclude Include="Hacks\Misc\MiscClasses.h" />
+    <ClInclude Include="Hacks\Misc\MiscDefinitions.h" />
+    <ClInclude Include="Hacks\Misc\MiscHacks.h" />
+    <ClInclude Include="Main\NetVars\NetVars.h" />
+    <ClInclude Include="Main\Offsets\Offsets.h" />
+    <ClInclude Include="Hacks\Features\Aim\Rage\RageBot.h" />
+    <ClInclude Include="Main\SDK\SDK\RenderManager.h" />
+    <ClInclude Include="Main\SDK\SDK\Surface.h" />
+    <ClInclude Include="Main\SDK\SDK\tinyxml2.h" />
+    <ClInclude Include="Main\SDK\SDK\UTIL Functions.h" />
+    <ClInclude Include="Main\SDK\SDK\Utilities.h" />
+    <ClInclude Include="Main\SDK\SDK\Vector.h" />
+    <ClInclude Include="Main\SDK\SDK\Vector2D.h" />
+    <ClInclude Include="Hacks\Features\Visuals\Visuals.h" />
+    <ClInclude Include="Main\Xor\XorStr.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Hacks\Features\AntiAim\AntiAntiAim.cpp" />
+    <ClCompile Include="Hacks\Misc\AutoDefuse\autodefuse.cpp" />
+    <ClCompile Include="Hacks\Features\AutoWall\Autowall.cpp" />
+    <ClCompile Include="Hacks\Features\Visuals\Chams\Chams.cpp" />
+    <ClCompile Include="Hacks\Misc\BunnyHop\CircleStrafer\circlestrafer.cpp" />
+    <ClCompile Include="Main\SDK\SDK\Controls.cpp" />
+    <ClCompile Include="Includes\CRC32\CRC32.cpp" />
+    <ClCompile Include="Hacks\Misc\DamageIndicator\DamageIndicator.cpp" />
+    <ClCompile Include="Main\DLLMain.cpp" />
+    <ClCompile Include="Main\SDK\SDK\Dumping.cpp" />
+    <ClCompile Include="Main\SDK\SDK\edgy.cpp" />
+    <ClCompile Include="Engine\Engine Prediction\EnginePrediction.cpp" />
+    <ClCompile Include="Main\Entities\Entities.cpp" />
+    <ClCompile Include="Hacks\Features\Visuals\ESP\ESP.cpp" />
+    <ClCompile Include="Engine\Engine Prediction\engine_prd.cpp" />
+    <ClCompile Include="Main\SDK\SDK\extrapolation.cpp" />
+    <ClCompile Include="Hacks\Features\FakeLag\Fakelag.cpp" />
+    <ClCompile Include="Main\SDK\SDK\globalshh.cpp" />
+    <ClCompile Include="Main\SDK\SDK\global_count.cpp" />
+    <ClCompile Include="Menu\GUI\GUI.cpp" />
+    <ClCompile Include="Hacks\Hacks.cpp" />
+    <ClCompile Include="Main\Hooks\Hooks.cpp" />
+    <ClCompile Include="Main\Injection\ReflectiveLoader.cpp" />
+    <ClCompile Include="Menu\Interface\Interfaces.cpp" />
+    <ClCompile Include="Hacks\Features\KnifeBot\knifebot.cpp" />
+    <ClCompile Include="Hacks\Misc\GrenadePrediction\kobe.cpp" />
+    <ClCompile Include="Hacks\Features\LagCompensation\laggycompensation.cpp" />
+    <ClCompile Include="Hacks\Features\Aim\Legit\LegitBot.cpp" />
+    <ClCompile Include="Main\SDK\SDK\lodepng.cpp" />
+    <ClCompile Include="Main\MathFunctions\MathFunctions.cpp" />
+    <ClCompile Include="Menu\Menu.cpp" />
+    <ClCompile Include="Main\SDK\SDK\MetaInfo.cpp" />
+    <ClCompile Include="Hacks\Misc\MiscHacks.cpp" />
+    <ClCompile Include="Main\NetVars\NetVarManager.cpp" />
+    <ClCompile Include="Main\NetVars\NetVars.cpp" />
+    <ClCompile Include="Main\Offsets\Offsets.cpp" />
+    <ClCompile Include="Hacks\Misc\Radar\radar.cpp" />
+    <ClCompile Include="Hacks\Features\Aim\Rage\RageBot.cpp" />
+    <ClCompile Include="Hacks\Features\Aim\Rage\Raged\raged.cpp" />
+    <ClCompile Include="Main\SDK\SDK\RenderManager.cpp" />
+    <ClCompile Include="Hacks\Features\Resolver\Resolver.cpp" />
+    <ClCompile Include="Main\SDK\SDK.cpp" />
+    <ClCompile Include="Main\SDK\SDK\SpoofedConvar.cpp" />
+    <ClCompile Include="Main\SDK\SDK\tinyxml2.cpp" />
+    <ClCompile Include="Main\SDK\SDK\UTIL Functions.cpp" />
+    <ClCompile Include="Main\SDK\SDK\Utilities.cpp" />
+    <ClCompile Include="Hacks\Features\Visuals\Visual.cpp" />
+    <ClCompile Include="Main\SDK\SDK\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Main\Hooks\hooks.backup" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
